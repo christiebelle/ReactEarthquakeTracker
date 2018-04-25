@@ -8,14 +8,14 @@ const QuakeList = (props) =>{
   return(
     <div>
       {props.quakes.map((earthquake, index) => {
-    return (
-      <Earthquake
-        key={index}
-        place={earthquake.place}
-        mag={earthquake.mag}
-      />
-    )
-  })}
+        return (
+          <Earthquake
+            key={index}
+            place={earthquake.place}
+            mag={earthquake.mag}
+          />
+        )
+      })}
     </div>
   )
 };

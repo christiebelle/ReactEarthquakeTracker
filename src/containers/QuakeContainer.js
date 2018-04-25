@@ -9,7 +9,6 @@ class QuakeContainer extends Component{
     this.handleSelectChange = this.handleSelectChange.bind(this);
     this.state = {
       quakes: [],
-      currentQuake: null
     }
   }
 
