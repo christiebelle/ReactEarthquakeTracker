@@ -5,10 +5,10 @@ class Earthquake extends Component{
     render(){
       return (
         <div className="earthquake">
-          <div className='details' height="200px">
-            <h3>{this.props.properties.place}</h3>
-            <h3>{this.props.mag}</h3>
-          </div>
+          <ul>
+            <li>{this.props.place}</li>
+            <li>{this.props.mag}</li>
+          </ul>
         </div>
       )
     };
