@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import QuakeContainer from './containers/QuakeContainer';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <h1>EarthQuake Tracker</h1>
+      <div>
+        <h1>Earthquake Tracker App</h1>
+        <QuakeContainer/>
+      </div>
     );
   }
 }
