@@ -5,7 +5,6 @@ const QuakeList = (props) =>{
   if(props.quakes === null || props.quakes === 0){
     return <p>Updating information...</p>
   };
-  {debugger};
   return(
     <div>
       {props.quakes.map((earthquake, index) => {

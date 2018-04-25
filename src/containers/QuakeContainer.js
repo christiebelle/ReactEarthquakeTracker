@@ -6,10 +6,10 @@ class QuakeContainer extends Component{
 
   constructor(props){
     super(props)
-    this.handleSelectChange = this.handleSelectChange.bind(this);
     this.state = {
-      quakes: [],
-    }
+      quakes: []
+    };
+    this.handleSelectChange = this.handleSelectChange.bind(this);
   }
 
   componentDidMount() {
@@ -21,6 +21,7 @@ class QuakeContainer extends Component{
     request.open('GET', url);
     request.onload = () => {
       if (request.status === 200) {
+        {debugger};
         const jsonString = request.responseText;
         const quakesArray = JSON.parse(jsonString)
         this.setState({quakes: quakesArray.features});
