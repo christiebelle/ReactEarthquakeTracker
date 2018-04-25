@@ -6,7 +6,7 @@ class Earthquake extends Component{
       return (
         <div className="earthquake">
           <div className='details' height="200px">
-            <h3>{this.props.place}</h3>
+            <h3>{this.props.properties.place}</h3>
             <h3>{this.props.mag}</h3>
           </div>
         </div>
