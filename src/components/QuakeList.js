@@ -1,16 +1,23 @@
 import React, {Component} from 'react';
+import Earthquake from './Earthquake';
 
-class QuakeList extends Component{
-
-  constructor(props){
-    super(props)
+const QuakeList = (props) =>{
+  if(props.quakes === null || props.quakes === 0){
+    return <p>Updating information...</p>
   }
-
-  render(){
-    return(
-      <h3>list of earthquakes goes here...</h3>
+  return(
+    <div>
+      {props.quakes.map((earthquake, index) => {
+    return (
+      <Earthquake
+        key={index}
+        place={earthquake.place}
+        mag={earthquake.mag}
+      />
     )
-  }
+  })}
+    </div>
+  )
 };
 
 export default QuakeList;
