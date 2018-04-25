@@ -8,7 +8,7 @@ class QuakeContainer extends Component{
 
   render(){
     return(
-      <h2>list of earthquakes goes here...</h2>
+      <h2>quake dropdown</h2>
     )
   }
 };

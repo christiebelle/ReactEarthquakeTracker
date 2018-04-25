@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 
 class QuakeList extends Component{
 
-  constructor(){
+  constructor(props){
     super(props)
   }
 
   render(){
     return(
-      <h2>list of earthquakes goes here...</h2>
+      <h3>list of earthquakes goes here...</h3>
     )
   }
 };
