@@ -12,6 +12,7 @@ class Earthquake extends Component{
         </div>
       )
     };
+
   };
 
 export default Earthquake;
