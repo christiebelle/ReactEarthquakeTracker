@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import QuakeList from '../components/QuakeList';
+import Header from '../components/Header';
 
 class QuakeContainer extends Component{
 
@@ -40,7 +41,7 @@ class QuakeContainer extends Component{
           handleSelectChange={this.handleSelectChange}
           filters={this.props.filters}
         />
-        <QuakeLists
+        <QuakeList
           quakes={this.state.quakes}
           url={this.props.filters[0].url}
           handleSelectChange={this.handleSelectChange}
